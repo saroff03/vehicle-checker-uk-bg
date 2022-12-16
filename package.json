@@ -1,0 +1,34 @@
+{
+  "name": "vehicle-checker-uk-bg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon index",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saroff03/vehicle-checker-uk-bg.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saroff03/vehicle-checker-uk-bg/issues"
+  },
+  "homepage": "https://github.com/saroff03/vehicle-checker-uk-bg#readme",
+  "dependencies": {
+    "apicache": "^1.6.3",
+    "axios": "^1.2.1",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "expres": "^0.0.5",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
