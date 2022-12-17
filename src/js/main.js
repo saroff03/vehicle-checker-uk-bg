@@ -2,12 +2,10 @@ const searchBtn = document.getElementById("search-btn")
 let emissions = document.getElementById("emissions")
 let vehicleColour = document.getElementById("colour")
 let lastv5c = document.getElementById("lastv5")
-let euroStatus = document.getElementById("euroStatus")
+let engine = document.getElementById("engine")
 let fuel = document.getElementById("fuel")
 let make = document.getElementById("make")
-let exportStatus = document.getElementById("export")
 let firstReg = document.getElementById("firstReg")
-let firstRegDvla = document.getElementById("firstRegDvla")
 let mot = document.getElementById("mot")
 let regNumber = document.getElementById("regNumber")
 let taxDue = document.getElementById("taxDue")
@@ -15,6 +13,7 @@ let taxStatus = document.getElementById("taxStatus")
 let typeApproval = document.getElementById("typeApproval")
 let wheelplan = document.getElementById("wheelplan")
 let manufacture = document.getElementById("yearOfManufacture")
+let motStatus = document.getElementById("motStatus")
 
 
 function startFetch() {
@@ -35,8 +34,21 @@ function startFetch() {
   .then(response => {
     console.log(response);
     
-
-    vehicleColour.innerHTML = response.colour;
+    emissions.innerHTML = response.co2Emissions || "Error - Not Found";
+    lastv5c.innerHTML = response.dateOfLastV5CIssued || "Error - Not Found";
+    engine.innerHTML = response.engineCapacity || "Error - Not Found";
+    fuel.innerHTML = response.fuelType || "Error - Not Found";
+    make.innerHTML = response.make || "Error - Not Found";
+    firstReg.innerHTML = response.monthOfFirstRegistration || "Error - Not Found";
+    mot.innerHTML = response.motExpiryDate || "Error - Not Found";
+    motStatus.innerHTML = response.motStatus || "Error - Not Found";
+    regNumber.innerHTML = response.registrationNumber || "Error - Not Found";
+    taxDue.innerHTML = response.taxDueDate || "Error - Not Found";
+    taxStatus.innerHTML = response.taxStatus || "Error - Not Found";
+    typeApproval.innerHTML = response.typeApproval || "Error - Not Found";
+    wheelplan.innerHTML = response.wheelplan || "Error - Not Found";
+    manufacture.innerHTML = response.yearOfManufacture || "Error - Not Found";
+    vehicleColour.innerHTML = response.colour || "Error - Not Found";
   })    
 
   .catch(err => {

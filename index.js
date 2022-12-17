@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const axios = require('axios');
 const cors = require("cors");
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3030;
 const rateLimit = require("express-rate-limit");
 
 
