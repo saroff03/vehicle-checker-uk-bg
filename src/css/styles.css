@@ -46,6 +46,7 @@ a:active, a:focus, a:hover {
 }
 
 #search-btn {
+  font-weight: bold;
   background-color: #48396a;
   color: white;
 }
@@ -68,4 +69,29 @@ a:active, a:focus, a:hover {
 .input-group { 
   margin: auto;
   width: 17rem;
+}
+
+ul {
+  border: none !important;
+}
+
+.btn-primary {
+  border: #5b588a;
+  background-color: #48396a;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.btn-primary:hover, .btn-primary:active {
+  background-color: #5b588a !important;
+  color: white !important;
+}
+
+h5 {
+  font-weight: bolder;
+}
+
+p {
+  font-weight: bold;
 }

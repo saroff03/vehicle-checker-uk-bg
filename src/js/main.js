@@ -1,4 +1,5 @@
 const searchBtn = document.getElementById("search-btn")
+const resetBtn = document.getElementById("resetBtn")
 let emissions = document.getElementById("emissions")
 let vehicleColour = document.getElementById("colour")
 let lastv5c = document.getElementById("lastv5")
@@ -64,3 +65,23 @@ function upperCaseF(a){
       a.value = a.value.toUpperCase();
   }, 1);
 }
+
+function resetInfo () {
+  emissions.innerHTML = "..." ;
+    lastv5c.innerHTML = "..." ;
+    engine.innerHTML = "..." ;
+    fuel.innerHTML = "..." ;
+    make.innerHTML = "..." ;
+    firstReg.innerHTML = "..." ;
+    mot.innerHTML = "..." ;
+    motStatus.innerHTML = "..." ;
+    regNumber.innerHTML = "..." ;
+    taxDue.innerHTML = "..." ;
+    taxStatus.innerHTML = "..." ;
+    typeApproval.innerHTML = "..." ;
+    wheelplan.innerHTML = "..." ;
+    manufacture.innerHTML = "..." ;
+    vehicleColour.innerHTML ="..." ;
+}
+
+resetBtn.addEventListener("click", resetInfo);
