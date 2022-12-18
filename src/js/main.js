@@ -85,3 +85,24 @@ function resetInfo () {
 }
 
 resetBtn.addEventListener("click", resetInfo);
+
+
+function toggleTheme() {
+  let theme = document.getElementById("theme");
+
+  if (theme.getAttribute('href') == 'css/light.css') {
+      theme.setAttribute('href', 'css/dark.css');
+  } else {
+      theme.setAttribute('href', 'css/light.css');
+  }
+}
+
+function changeBtn() {
+  let elem = document.getElementById("themeBtn");
+
+  if (elem.innerHTML == `<i class="bi bi-moon-stars"></i> Dark mode`) elem.innerHTML = `<i class="bi bi-brightness-high"></i> Light mode`;
+
+  else elem.innerHTML = `<i class="bi bi-moon-stars"></i> Dark mode`;
+}
+
+

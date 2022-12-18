@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0a090e;
+}
+
+.bg {
+  background-color: #24232b;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+
+.bg-nav {
+  background-color: #24232b;
+  min-width: 100vw;
+}
+
+.navbar {
+  font-family: 'Cairo', sans-serif;
+  color: #f5f5f5;
+}
+
+a {
+  font-size: 1.3rem !important;
+  color: #f8f8f8 !important;
+}
+
+.dropdown-menu {
+  background-color: #24232b;
+}
+
+a:active, a:focus, a:hover {
+  color: #f5f5f5 !important;
+  background-color: #f5f5f5;
+}
+
+.dropdown-menu > a:active, a:focus, a:hover {
+  color: #484b6a !important;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+#search-btn {
+  font-weight: bold;
+  background-color: #a4ffaf;
+  color: #1c3a1b;
+}
+
+#search-btn:hover, #search-btn:active {
+  background-color: #6daa75;
+  color: #1c3a1b;
+}
+
+.form-control {
+  font-weight: bold;
+  height: 50px;
+}
+
+.form-control:focus {
+  border: #a4ffaf;
+  box-shadow: inset 1px 1px #a4ffaf, 0 0 8px #a4ffaf;
+}
+
+.input-group { 
+  margin: auto;
+  width: 17rem;
+}
+
+ul {
+  border: none !important;
+}
+
+.btn-primary {
+  border: #a4ffaf;
+  background-color: #a4ffaf;
+  color: #1c3a1b;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.btn-primary:hover, .btn-primary:active {
+  background-color: #6daa75 !important;
+  color: #1c3a1b !important;
+}
+
+h5 {
+  color: #e6e5ea;
+  font-weight: bolder;
+}
+
+p {
+  color: #e6e5ea;
+  font-weight: bold;
+}
+
+.card {
+  background-color: #18171f;
+}
