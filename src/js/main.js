@@ -1,4 +1,3 @@
-const swup = new Swup()
 const searchBtn = document.getElementById("search-btn")
 const resetBtn = document.getElementById("resetBtn")
 let emissions = document.getElementById("emissions")
@@ -99,5 +98,3 @@ function changeBtn() {
 
   else elem.innerHTML = `<i class="bi bi-moon-stars"></i> Dark mode`;
 }
-
-
