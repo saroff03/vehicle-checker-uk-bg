@@ -1,3 +1,4 @@
+const swup = new Swup()
 const searchBtn = document.getElementById("search-btn")
 const resetBtn = document.getElementById("resetBtn")
 let emissions = document.getElementById("emissions")
@@ -86,16 +87,10 @@ function resetInfo () {
 
 resetBtn.addEventListener("click", resetInfo);
 
+document.getElementById("themeBtn").addEventListener('click', () => {
+  document.body.classList.toggle('dark')
+})
 
-function toggleTheme() {
-  let theme = document.getElementById("theme");
-
-  if (theme.getAttribute('href') == 'css/light.css') {
-      theme.setAttribute('href', 'css/dark.css');
-  } else {
-      theme.setAttribute('href', 'css/light.css');
-  }
-}
 
 function changeBtn() {
   let elem = document.getElementById("themeBtn");

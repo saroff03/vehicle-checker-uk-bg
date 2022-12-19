@@ -25,6 +25,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
   <!--JavaScript-->
+  <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
   <script src="./js/main.js" defer></script>
 
   <title>Vehicle Checker</title>
@@ -43,15 +44,15 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Language</a>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dil</a>
                 <ul class="dropdown-menu">
-                  <li><a href="/src/index.html" class="dropdown-item"><span class="fi fi-gb  "></span> English</a></li>
-                  <li><a href="/src/bg.html" class="dropdown-item"><span class="fi fi-bg  "></span> Български</a></li>
-                  <li><a href="/src/ro.html" class="dropdown-item"><span class="fi fi-ro  "></span> Română</a></li>
-                  <li><a href="/src/gr.html" class="dropdown-item"><span class="fi fi-gr  "></span> Ελληνικά</a></li>
-                  <li><a href="/src/pl.html" class="dropdown-item"><span class="fi fi-pl  "></span> Polish</a></li>
-                  <li><a href="/src/tr.html" class="dropdown-item"><span class="fi fi-tr  "></span> Turkish</a></li>
-                  <li><a href="/src/hu.html" class="dropdown-item"><span class="fi fi-hu  "></span> Magyar</a></li>
+                  <li><a href="/index.html" class="dropdown-item"><span class="fi fi-gb  "></span> English</a></li>
+                  <li><a href="/bg.html" class="dropdown-item"><span class="fi fi-bg  "></span> Български</a></li>
+                  <li><a href="/ro.html" class="dropdown-item"><span class="fi fi-ro  "></span> Română</a></li>
+                  <li><a href="/gr.html" class="dropdown-item"><span class="fi fi-gr  "></span> Ελληνικά</a></li>
+                  <li><a href="/pl.html" class="dropdown-item"><span class="fi fi-pl  "></span> Polski</a></li>
+                  <li><a href="/tr.html" class="dropdown-item"><span class="fi fi-tr  "></span> Türkçe</a></li>
+                  <li><a href="/hu.html" class="dropdown-item"><span class="fi fi-hu  "></span> Magyar</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -64,12 +65,12 @@
     </div> 
   </div>
 
-  <div class="container mt-4 p-2 bg">
+  <div class="container mt-4 p-2 bg transition-fade" id="swup">
 
     <!--Search bar-->
     <div class="input-group mb-3">
-      <input type="text" class="form-control" placeholder="Registration number" aria-label="Enter registration number" id="plate" oninput="this.value = this.value.toUpperCase()" aria-describedby="search-btn">
-      <button class="btn btn-outline-secondary" type="button" id="search-btn">Search</button>
+      <input type="text" class="form-control" placeholder="Kayıt numarası" aria-label="Enter registration number" id="plate" oninput="this.value = this.value.toUpperCase()" aria-describedby="search-btn">
+      <button class="btn btn-outline-secondary" type="button" id="search-btn">Aramak</button>
     </div>
 
     
@@ -78,7 +79,7 @@
       <div class="col-sm-6">
         <div class="card m-1">
           <div class="card-body">
-            <h5 class="card-title">Make:</h5>
+            <h5 class="card-title">Araba yapmak:</h5>
             <p id="make">...</p>
           </div>
         </div>
@@ -86,7 +87,7 @@
       <div class="col-sm-6">
         <div class="card m-1">
           <div class="card-body">
-            <h5 class="card-title">Vehicle colour:</h5>
+            <h5 class="card-title">Renk:</h5>
             <p id="colour">...</p>
           </div>
         </div>
@@ -94,7 +95,7 @@
       <div class="col-sm-6">
         <div class="card m-1">
           <div class="card-body">
-            <h5 class="card-title">Vehicle registration number:</h5>
+            <h5 class="card-title">Araç kayıt numarası:</h5>
             <p id="regNumber">...</p>
           </div>
         </div>
@@ -102,7 +103,7 @@
       <div class="col-sm-6">
         <div class="card m-1">
           <div class="card-body">
-            <h5 class="card-title">Year of manufacture:</h5>
+            <h5 class="card-title">Üretim yılı:</h5>
             <p id="yearOfManufacture">...</p>
           </div>
         </div>
@@ -110,7 +111,7 @@
       <div class="col-sm-6">
         <div class="card m-1">
           <div class="card-body">
-            <h5 class="card-title">Fuel type:</h5>
+            <h5 class="card-title">Yakıt tipi:</h5>
             <p id="fuel">...</p>
           </div>
         </div>
@@ -118,7 +119,7 @@
       <div class="col-sm-6">
         <div class="card m-1">
           <div class="card-body">
-            <h5 class="card-title">Engine size(cc):</h5>
+            <h5 class="card-title">Motor hacmi(cc):</h5>
             <p id="engine">...</p>
           </div>
         </div>
@@ -126,7 +127,7 @@
       <div class="col-sm-6">
         <div class="card m-1">
           <div class="card-body">
-            <h5 class="card-title">Co2 Emissions(g/km):</h5>
+            <h5 class="card-title">Co2 Emisyonları(g/km):</h5>
             <p id="emissions">...</p>
           </div>
         </div>
@@ -134,7 +135,7 @@
       <div class="col-sm-6">
         <div class="card m-1">
           <div class="card-body">
-            <h5 class="card-title">Type approval:</h5>
+            <h5 class="card-title">Tip onayı:</h5>
             <p id="typeApproval">...</p>
           </div>
         </div>
@@ -142,7 +143,7 @@
       <div class="col-sm-6">
         <div class="card m-1">
           <div class="card-body">
-            <h5 class="card-title">Date of first registration:</h5>
+            <h5 class="card-title">İlk kayıt tarihi:</h5>
             <p id="firstReg">...</p>
           </div>
         </div>
@@ -150,7 +151,7 @@
       <div class="col-sm-6">
         <div class="card m-1">
           <div class="card-body">
-            <h5 class="card-title">Date of last V5C issued:</h5>
+            <h5 class="card-title">Son yayınlanan V5C tarihi:</h5>
             <p id="lastv5">...</p>
           </div>
         </div>
@@ -158,7 +159,7 @@
       <div class="col-sm-6">
         <div class="card m-1">
           <div class="card-body">
-            <h5 class="card-title">MOT Status:</h5>
+            <h5 class="card-title">MOT Durumu:</h5>
             <p id="motStatus">...</p>
           </div>
         </div>
@@ -166,7 +167,7 @@
       <div class="col-sm-6">
         <div class="card m-1">
           <div class="card-body">
-            <h5 class="card-title">MOT due:</h5>
+            <h5 class="card-title">MOT vadesi dolmuş:</h5>
             <p id="mot">...</p>
           </div>
         </div>
@@ -174,7 +175,7 @@
       <div class="col-sm-6">
         <div class="card m-1">
           <div class="card-body">
-            <h5 class="card-title">Tax status:</h5>
+            <h5 class="card-title">Tax durumu:</h5>
             <p id="taxStatus">...</p>
           </div>
         </div>
@@ -182,7 +183,7 @@
       <div class="col-sm-6">
         <div class="card m-1">
           <div class="card-body">
-            <h5 class="card-title">Tax due:</h5>
+            <h5 class="card-title">Tax vadesi dolmuş:</h5>
             <p id="taxDue">...</p>
           </div>
         </div>
@@ -191,7 +192,7 @@
       <div class="col-sm-6">
         <div class="card m-1">
           <div class="card-body">
-            <h5 class="card-title">Wheelplan:</h5>
+            <h5 class="card-title">tekerlek planı:</h5>
             <p id="wheelplan">...</p>
           </div>
         </div>
@@ -199,8 +200,8 @@
       <div class="col-sm-6">
         <div class="card m-1">
           <div class="card-body">
-            <h5 class="card-title">Reset all information?</h5>
-            <button class="btn btn-primary" id="resetBtn">Reset</button>
+            <h5 class="card-title">Tüm bilgiler sıfırlansın mı?</h5>
+            <button class="btn btn-primary" id="resetBtn">Sıfırla</button>
           </div>
         </div>
       </div>

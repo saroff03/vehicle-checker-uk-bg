@@ -25,6 +25,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
   <!--JavaScript-->
+  <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
   <script src="./js/main.js" defer></script>
 
   <title>Vehicle Checker</title>
@@ -45,13 +46,13 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Език</a>
                 <ul class="dropdown-menu">
-                  <li><a href="/src/index.html" class="dropdown-item"><span class="fi fi-gb  "></span> English</a></li>
-                  <li><a href="/src/bg.html" class="dropdown-item"><span class="fi fi-bg  "></span> Български</a></li>
-                  <li><a href="/src/ro.html" class="dropdown-item"><span class="fi fi-ro  "></span> Română</a></li>
-                  <li><a href="/src/gr.html" class="dropdown-item"><span class="fi fi-gr  "></span> Ελληνικά</a></li>
-                  <li><a href="/src/pl.html" class="dropdown-item"><span class="fi fi-pl  "></span> Polish</a></li>
-                  <li><a href="/src/tr.html" class="dropdown-item"><span class="fi fi-tr  "></span> Turkish</a></li>
-                  <li><a href="/src/hu.html" class="dropdown-item"><span class="fi fi-hu  "></span> Magyar</a></li>
+                  <li><a href="/index.html" class="dropdown-item"><span class="fi fi-gb  "></span> English</a></li>
+                  <li><a href="/bg.html" class="dropdown-item"><span class="fi fi-bg  "></span> Български</a></li>
+                  <li><a href="/ro.html" class="dropdown-item"><span class="fi fi-ro  "></span> Română</a></li>
+                  <li><a href="/gr.html" class="dropdown-item"><span class="fi fi-gr  "></span> Ελληνικά</a></li>
+                  <li><a href="/pl.html" class="dropdown-item"><span class="fi fi-pl  "></span> Polski</a></li>
+                  <li><a href="/tr.html" class="dropdown-item"><span class="fi fi-tr  "></span> Türkçe</a></li>
+                  <li><a href="/hu.html" class="dropdown-item"><span class="fi fi-hu  "></span> Magyar</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -64,7 +65,7 @@
     </div> 
   </div>
 
-  <div class="container mt-4 p-2 bg">
+  <div class="container mt-4 p-2 bg transition-fade" id="swup">
 
     <!--Search bar-->
     <div class="input-group mb-3">

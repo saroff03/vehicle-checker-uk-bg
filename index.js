@@ -25,7 +25,7 @@ app.set("trust proxy")
 
 app.use(bodyParser.json());
 
-app.use(express.static("/src"));
+app.use(express.static("src"));
 
 //Routes
 app.use("/vehicleinfo", require("./routes"));

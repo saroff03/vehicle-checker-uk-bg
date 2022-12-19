@@ -26,7 +26,8 @@
     "dotenv": "^16.0.3",
     "expres": "^0.0.5",
     "express": "^4.18.2",
-    "express-rate-limit": "^6.7.0"
+    "express-rate-limit": "^6.7.0",
+    "swup": "^2.0.19"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
